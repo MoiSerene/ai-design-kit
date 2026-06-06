@@ -7,7 +7,7 @@ import WorkflowsPage from '@/pages/WorkflowsPage';
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={import.meta.env.BASE_URL.replace(/\/$/, '')}>
       <Navigation />
       <main>
         <Routes>
