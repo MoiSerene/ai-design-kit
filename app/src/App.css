@@ -1,0 +1,8 @@
+/* App-level layout styles only */
+#root {
+  min-height: 100vh;
+}
+
+main {
+  min-height: 100vh;
+}

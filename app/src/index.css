@@ -1,0 +1,122 @@
+/* Akkurat LL — Swiss precision grotesque via CDN */
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Lavender-soft foundation — pastel yellow→purple gradient harmony */
+    --background: 270 30% 97%;
+    --foreground: 270 25% 12%;
+    --card: 0 0% 100%;
+    --card-foreground: 270 25% 12%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 270 25% 12%;
+
+    /* Deep violet primary — warm, intellectual */
+    --primary: 270 25% 20%;
+    --primary-foreground: 0 0% 100%;
+
+    /* Soft lavender secondary */
+    --secondary: 270 20% 94%;
+    --secondary-foreground: 270 20% 25%;
+
+    /* Muted tones — WCAG AA: 4.5:1 against white */
+    --muted: 270 20% 94%;
+    --muted-foreground: 270 15% 42%;
+
+    /* Accent — gentle lavender, cohesive with gradient */
+    --accent: 275 40% 92%;
+    --accent-foreground: 275 50% 30%;
+
+    /* Destructive */
+    --destructive: 0 55% 48%;
+    --destructive-foreground: 0 0% 100%;
+
+    /* Borders & inputs — soft purple-gray */
+    --border: 270 15% 88%;
+    --input: 270 15% 88%;
+    --ring: 270 25% 20%;
+
+    /* Radius — clean, slightly rounded */
+    --radius: 0.5rem;
+
+    /* Sidebar */
+    --sidebar-background: 270 30% 97%;
+    --sidebar-foreground: 270 25% 12%;
+    --sidebar-primary: 270 25% 20%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 270 20% 94%;
+    --sidebar-accent-foreground: 270 20% 25%;
+    --sidebar-border: 270 15% 88%;
+    --sidebar-ring: 270 25% 20%;
+  }
+
+  .dark {
+    --background: 270 20% 8%;
+    --foreground: 270 20% 94%;
+    --card: 270 20% 10%;
+    --card-foreground: 270 20% 94%;
+    --popover: 270 20% 9%;
+    --popover-foreground: 270 20% 94%;
+
+    --primary: 270 20% 94%;
+    --primary-foreground: 270 20% 10%;
+
+    --secondary: 270 15% 18%;
+    --secondary-foreground: 270 20% 94%;
+
+    --muted: 270 15% 18%;
+    --muted-foreground: 270 15% 62%;
+
+    --accent: 275 25% 22%;
+    --accent-foreground: 275 40% 72%;
+
+    --destructive: 0 55% 48%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 270 15% 28%;
+    --input: 270 15% 28%;
+    --ring: 270 20% 94%;
+
+    --sidebar-background: 270 20% 8%;
+    --sidebar-foreground: 270 20% 94%;
+    --sidebar-primary: 270 20% 94%;
+    --sidebar-primary-foreground: 270 20% 10%;
+    --sidebar-accent: 270 15% 18%;
+    --sidebar-accent-foreground: 270 20% 94%;
+    --sidebar-border: 270 15% 28%;
+    --sidebar-ring: 270 20% 94%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply text-foreground antialiased;
+    font-family: 'Space Grotesk', system-ui, -apple-system, sans-serif;
+    font-feature-settings: 'ss02' 1, 'ss03' 1, 'ss04' 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background: linear-gradient(135deg, #fdf8ed 0%, #f6eff7 50%, #efe6f5 100%);
+    min-height: 100vh;
+    background-attachment: fixed;
+  }
+
+  /* Akkurat LL-like heading style — tight, precise, geometric */
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Space Grotesk', system-ui, -apple-system, sans-serif;
+    letter-spacing: -0.02em;
+    font-weight: 500;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
