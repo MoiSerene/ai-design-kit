@@ -19,7 +19,7 @@ function App() {
       </main>
       <footer className="border-t py-6 px-6">
         <div className="max-w-6xl mx-auto text-xs text-muted-foreground">
-          Created by <a href="https://github.com/MoiSerene" target="_blank" rel="noopener noreferrer" class="hover:text-foreground transition-colors underline underline-offset-2">Serene Jiang</a>
+          Created by <a href="https://github.com/MoiSerene" target="_blank" rel="noopener noreferrer" className="hover:text-foreground transition-colors underline underline-offset-2">Serene Jiang</a>
         </div>
       </footer>
     </BrowserRouter>
