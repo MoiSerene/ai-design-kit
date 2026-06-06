@@ -66,7 +66,6 @@ export default function SkillsPage() {
               All
             </button>
             {stages.map((stage) => {
-              const stageKey = stage as Stage;
               return (
                 <button
                   key={stage}
@@ -85,7 +84,6 @@ export default function SkillsPage() {
             <div className="w-px h-5 bg-border mx-1 hidden sm:block" />
 
             {skillTypes.map((type) => {
-              const typeKey = type as SkillType;
               return (
                 <button
                   key={type}
