@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { HashRouter, Routes, Route } from 'react-router-dom';
 import Navigation from '@/components/Navigation';
 import HomePage from '@/pages/HomePage';
 import SkillsPage from '@/pages/SkillsPage';
@@ -7,7 +7,7 @@ import WorkflowsPage from '@/pages/WorkflowsPage';
 
 function App() {
   return (
-    <BrowserRouter basename={import.meta.env.BASE_URL.replace(/\/$/, '')}>
+    <HashRouter>
       <Navigation />
       <main>
         <Routes>
@@ -22,7 +22,7 @@ function App() {
           Created by <a href="https://github.com/MoiSerene" target="_blank" rel="noopener noreferrer" className="hover:text-foreground transition-colors underline underline-offset-2">Serene Jiang</a>
         </div>
       </footer>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
